@@ -5,7 +5,7 @@ using UnityEngine;
 public class WeaponBehaviour : MonoBehaviour
 {
 
-    const float BulletSpeed = 5000, WeaponRange = 100;
+    const float BulletSpeed = 500, WeaponRange = 100;
     Transform BarrelExit;
 
     [SerializeField] GameObject bulletPrefab;
@@ -26,6 +26,6 @@ public class WeaponBehaviour : MonoBehaviour
     public void Shoot() {
         var bullet = Instantiate(bulletPrefab, BarrelExit.position, new Quaternion());
         var rigidbody = bullet.GetComponent<Rigidbody>();  //.AddForce(transform.up * Time.deltaTime * BulletSpeed);
-        rigidbody.velocity = transform.up * Time.deltaTime * BulletSpeed;
+        rigidbody.velocity = transform.up * BulletSpeed;
     }
 }
