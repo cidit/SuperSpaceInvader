@@ -18,6 +18,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="GruntObstacle.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
           <e p="WeaponBehaviour.cs" t="Include" />
         </e>
